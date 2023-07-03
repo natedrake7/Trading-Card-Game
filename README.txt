@@ -1,29 +1,24 @@
 Λαμπρόπουλος Κωνσταντίνος
 Γκέργκη Δημήτρης
 
-Το παρόν πρόγραμμα είναι ένα card game υλοποιημένο σε C++.Το παιχνίδι παίζεται σε ένα τραπέζι (GameBoard) στο οποίο συμμετέχουν παίκτες (Player).
-Κάθε παίκτης αναπαριστά έναν έντιμο (ή... άτιμο) δυνάστη που διαχειρίζεται την (ιαπωνικού τύπου)
-δυναστεία του. Κάθε παίκτης φυλάει/κρατάει τις κάρτες του σε προκαθορισμένες περιοχές του
-τραπεζιού ανάλογα με τη λειτουργία ή την κατάστασή τους, για παράδειγμα χρησιμοποιεί δύο
-decks καρτών για να τραβάει νέες κάρτες, το “χέρι” του για να ενεργοποιήσει κάρτες σε
-συγκεκριμένη φάση του παιχνιδιού, τέσσερις (4) κάρτες που αναπαριστούν επαρχίες της
-δυναστείας του κ.α. Σκοπός του παίκτη είναι η καταστροφή των επαρχιών των υπολοίπων παικτών
-και η φύλαξη τουλάχιστον μίας δικιάς του.
-Το ένα deck, αποκαλούμενο fate deck, περιέχει πράσινες κάρτες που αναπαριστούν ενέργειες
-διαθέσιμες στο δυνάστη (χρήση αντικειμένων και ακολούθων) και τις οποίες ο δυνάστης κρατάει
-στο χέρι του και διαλέγει σε σχετική φάση του παιχνιδιού. Το άλλο deck, αποκαλούμενο dynasty
-deck, περιέχει μαύρες κάρτες οι οποίες αναπαριστούν μεγάλες προσωπικότητες ή ιδιοκτησίες που
-αποτελούν μέρος της δυναστείας και που τοποθετούνται σε περιοχή μπροστά στον παίκτη. Κάθε
-deck έχει μέγεθος τουλάχιστον σαράντα (40) καρτών καθώς και ένα προκαθορισμένο όριο
-(συνήθως 60 καρτών). Στο χέρι του μπορεί να κρατάει μέχρι ένα (προκαθορισμένο, συνήθως σε 6)
-μέγιστο πλήθος καρτών. Κάθε δυνάστης χαρακτηρίζεται από την οικογενειακή του εντιμότητα
-(honour) η οποία αποδίδεται αρχικά από μια ειδική κάρτα που αναπαριστά το φρούριό του
-(Stronghold).
-Το παιχνίδι εκτελείται σε γύρους πολλαπλών φάσεων, ενώ οι παίκτες παίζουν σε φθίνουσα σειρά
-βάσει της εντιμότητάς τους.
+This project is a card game written in C++.The game takes place on the GameBoard in which there are players.
+Each players represents and honourable(or...dishonourable) oppressor who manages his (japanese type)
+dynasty.Each player safekeeps his cards in specified regions of the GameBoard based on their state,for example
+he draws from 2 decks of cards,his "hand" to use certain cards at different phases of the game,4 cards which
+represent provinces of this dynasty etc.The main purpose of each player is to destroy the provinces of the rest of the players
+and the safekeeping of at least one province of his.
+The Fate Deck,has Green cards which represent specific abilities available to the oppressor(use of objects or followers) ,which the 
+oppressor keeps at his hand and chooses at the appropriate phase of the game.The other deck,the Dynasty Deck,
+has Black Cards which represent great personalities or properties which are part of the dynasty and are placed
+in front of the player.Each Deck has at least 40 cards and a max limit of cards (60).The player can have at his hand 
+at most 6 cards.Each oppressor is characterized by his family's honour,which is given to him by a special card given at the
+beginning of the game,called StrongHold.
+The Game takes place on multiple rounds of multiple phases,and the players play on descending order based on
+their Honour.
 
-Tο παιχνίδι αποτελεί απλοποιημένη μορφή του Legend of the Five Rings,και ένα link για αναλυτικούς κανόνες είναι το παρακάτω :
+This implementation is a simpler version of the Legend of the Five Rings,and a link with more details lies below:
 https://www.fantasyflightgames.com/en/products/legend-of-the-five-rings-the-card-game/
 
-Τέλος υπάρχει makefile που με την εντολή make δημιουργεί το εκτελέσιμο main το οποίο κατά την εκτέλεση του αρχίζει το παιχνίδι
-με 2 παίχτες.Δεν είναι πλήρως υλοποιημένο και είναι πιθανό να υπάρχουν bugs.
+There is a makefile ,which by the use of the command make ,creates the executable main.By running main the game starts with 2 players.
+Note that the game is not fully implemented and bugs may appear.
+
